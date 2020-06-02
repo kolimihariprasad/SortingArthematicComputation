@@ -8,4 +8,6 @@ result2=$((a*b+c))
 echo $result2
 result3=`awk "BEGIN {print $c+$a/$b}"`
 echo $result3
-	
+result4=$((a%b+c))
+echo $result4
+
