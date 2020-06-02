@@ -6,5 +6,8 @@ result[result1]=$((a+b*c))
 result[result2]=$((a*b+c))
 result[result3]=`awk "BEGIN {print $c+$a/$b}"`
 result[result4]=$((a%b+c))
-echo ${result[@]}
-echo ${!result[@]}
+for((i=0;i<5;i++))
+do
+	resultArray[$i]=${result["result"$i]}
+done
+echo ${resultArray[@]}
