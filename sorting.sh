@@ -17,7 +17,7 @@ for(( i=1;i<5;i++ ))
 do
         for(( j=$i+1;j<5;j++ ))
         do
-                if [ ${resultArray[$i]} -lt ${resultArray[$j]} ]
+                if [ ${resultArray[$i]} -gt ${resultArray[$j]} ]
                 then
                         temp=${resultArray[$i]}
                         resultArray[$i]=${resultArray[$j]}
