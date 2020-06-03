@@ -10,4 +10,5 @@ for((i=0;i<5;i++))
 do
 	resultArray[$i]=${result["result"$i]}
 done
-echo ${resultArray[@]}
+echo ${resultArray[@]} | sort
+
